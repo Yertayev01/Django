@@ -54,7 +54,7 @@ INSTALLED_APPS = [
 
     #apps
     'shop.apps.ShopConfig',
-    #'cart.apps.CartConfig',
+    'cart.apps.CartConfig',
     # 'account.apps.AccountConfig',
     # 'payment.apps.PaymentConfig',
     # "recommend.apps.RecommendConfig",
@@ -88,7 +88,7 @@ TEMPLATES = [
 
                 #Custom Context Processors
                 'shop.context_processors.categories',
-                #'cart.context_processors.cart',
+                'cart.context_processors.cart',
             ],
         },
     },
