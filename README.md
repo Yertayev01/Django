@@ -1,0 +1,2 @@
+slugField 
+classMeta
