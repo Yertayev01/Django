@@ -2,7 +2,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import include, path
-#from django_email_verification import urls as email_urls
+from django_email_verification import urls as email_urls
 
 from . import views
 
@@ -13,7 +13,7 @@ urlpatterns = [
     path('account/', include('account.urls', namespace='account')),
     # path('payment/', include('payment.urls', namespace='payment')),
     # path("recommend/", include('recommend.urls', namespace='recommend')),
-    # path('email/', include(email_urls), name='email-verification'),
+     path('email/', include(email_urls), name='email-verification'),
     # path('api/v1/', include('api.urls', namespace='api')),
     # path('', views.index, name='index'),
 ]
