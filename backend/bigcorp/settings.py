@@ -39,12 +39,12 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     #third party libraries
-    # 'mathfilters',
+    'mathfilters',
     # 'crispy_forms',
     # "crispy_bootstrap5",
     # 'django_email_verification',
     # 'django_google_fonts',
-    # 'sorl.thumbnail',
+    'sorl.thumbnail',
     # 'django_celery_beat',
     # 'django_celery_results',
     "django_htmx",
