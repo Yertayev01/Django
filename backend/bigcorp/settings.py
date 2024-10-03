@@ -40,9 +40,15 @@ INSTALLED_APPS = [
 
     #third party libraries
     'mathfilters',
+<<<<<<< HEAD
     # 'crispy_forms',
     # "crispy_bootstrap5",
     # 'django_email_verification',
+=======
+     'crispy_forms',
+     "crispy_bootstrap5",
+     'django_email_verification',
+>>>>>>> cda6d0548fd771f291dda52f5ed51341a6d8b761
     # 'django_google_fonts',
     'sorl.thumbnail',
     # 'django_celery_beat',
@@ -55,7 +61,7 @@ INSTALLED_APPS = [
     #apps
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
-    # 'account.apps.AccountConfig',
+    'account.apps.AccountConfig',
     # 'payment.apps.PaymentConfig',
     # "recommend.apps.RecommendConfig",
     # 'api.apps.ApiConfig',
@@ -146,6 +152,10 @@ STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'static'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
+
+#Crispy Forms
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+CRISPY_TEMPLATE_PACK = "bootstrap5"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
