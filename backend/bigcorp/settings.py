@@ -49,7 +49,7 @@ INSTALLED_APPS = [
      "crispy_bootstrap5",
      'django_email_verification',
 
-    # 'django_google_fonts',
+    'django_google_fonts',
     'sorl.thumbnail',
     # 'django_celery_beat',
     # 'django_celery_results',
@@ -62,7 +62,7 @@ INSTALLED_APPS = [
     'shop.apps.ShopConfig',
     'cart.apps.CartConfig',
     'account.apps.AccountConfig',
-    # 'payment.apps.PaymentConfig',
+    'payment.apps.PaymentConfig',
     # "recommend.apps.RecommendConfig",
     # 'api.apps.ApiConfig',
 ]
@@ -197,9 +197,22 @@ EMAIL_MAIL_CALLBACK = email_verified_callback
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'alishertaev@gmail.com'
+EMAIL_HOST_USER = 'alisherertaev@gmail.com'
 EMAIL_HOST_PASSWORD = env('EMAIL_HOST_PASSWORD')  # os.environ['password_key'] suggested
 EMAIL_USE_TLS = True
+
+#Stripe
+STRIPE_PUBLISHABLE_KEY = env('STRIPE_PUBLISHABLE_KEY')
+STRIPE_SECRET_KEY = env('STRIPE_SECRET_KEY')
+STRIPE_API_VERSION = env('STRIPE_API_VERSION')
+#STRIPE_WEBHOOK_SECRET = env('STRIPE_WEBHOOK_SECRET')
+
+#Yookassa
+YOOKASSA_SECRET_KEY = env('YOOKASSA_SECRET_KEY')
+YOOKASSA_SHOP_ID = env('YOOKASSA_SHOP_ID')
+
+GOOGLE_FONTS = ['Montserrat:wght@300,400', 'Roboto']
+GOOGLE_FONTS_DIR = BASE_DIR / 'static'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field

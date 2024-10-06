@@ -11,11 +11,11 @@ urlpatterns = [
     path('shop/', include('shop.urls', namespace='shop')),
     path('cart/', include('cart.urls', namespace='cart')),
     path('account/', include('account.urls', namespace='account')),
-    # path('payment/', include('payment.urls', namespace='payment')),
+    path('payment/', include('payment.urls', namespace='payment')),
     # path("recommend/", include('recommend.urls', namespace='recommend')),
      path('email/', include(email_urls), name='email-verification'),
     # path('api/v1/', include('api.urls', namespace='api')),
-    # path('', views.index, name='index'),
+    path('', views.index, name='index'),
 ]
 
 if settings.DEBUG:
